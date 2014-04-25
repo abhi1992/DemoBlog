@@ -11,8 +11,8 @@
         </tr>
         <tr>
             <td></td>
-            <td><?php echo form_dropdown('template', array('page'=>'Page', 'articles'=>'Articles', 'homepage'=>'Homepage'
-                , 'blog'=>'Blog', 'course'=>'Course'), 
+            <td><?php echo form_dropdown('template', array('page'=>'Page', 'homepage'=>'Homepage'
+                , 'blog'=>'Blog'), 
                     $this->input->post('template') ? $this->input->post('template') : $page->template); ?></td>
         </tr>
         <tr>

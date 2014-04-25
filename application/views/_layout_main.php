@@ -15,7 +15,7 @@
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul id = "nav_ul_left" class="nav navbar-nav">
-                        <li class=""><a href="<?php echo site_url('blog'); ?>" class="my-link ">Blog</a></li>
+                        <!--<li class=""><a href="<?php // echo site_url('blog'); ?>" class="my-link ">Blog</a></li>-->
                     </ul>
                     
                 </div>

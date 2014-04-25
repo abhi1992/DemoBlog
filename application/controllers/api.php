@@ -114,14 +114,14 @@ class Api extends Frontend_Controller {
         if ($count > $perPage) {
             $this->load->library('pagination');
             
-            $config['base_url'] = site_url($this->uri->segment(1));
+            $config['base_url'] = site_url('/article/no');
             $config['total_rows'] = $count;
             $config['per_page'] = $perPage;
-            $config['uri_segment'] = 2;
+            $config['uri_segment'] = 3;
             
             $this->pagination->initialize($config);
             $this->data['pagination'] = $this->pagination->create_links();
-            $offset = $this->uri->segment(2);
+            $offset = $this->uri->segment(3);
         }
         else {
             $this->data['pagination'] = '';

@@ -9,6 +9,10 @@ class  Comments extends Admin_Controller {
     
     public function index() {
         $this->data['comments'] = $this->comments_m->get();
+        for ($i=0; $i<count($this->data['comments']); $i++) {
+            $this->data['comments'][$i]->pubdate = $this->getTime($this->data['comments'][$i]->pubdate);
+        }
+        
         $this->data['subview'] = 'admin/comments/index';
         $this->load->view('admin/_layout_main', $this->data);
     }

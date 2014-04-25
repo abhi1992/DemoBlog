@@ -39,11 +39,12 @@
 */
 $route['default_controller'] = 'api/blog1';
 $route['404_override'] = '';
+$route['admin'] = 'admin/dashboard';
 $route['homepage'] = 'page/index';
-$route['blog/(:num)'] = 'page/index/$1';
-$route['blog'] = 'page/index';
-$route['blog/(:num)/(:any)'] = 'article/index/$1/$2';
-$route['blog/tag/(:any)'] = 'article/get_by_tag/$1';
+//$route['blog/(:num)'] = 'page/index/$1';
+//$route['blog'] = 'page/index';
+//$route['blog/(:num)/(:any)'] = 'article/index/$1/$2';
+//$route['blog/tag/(:any)'] = 'article/get_by_tag/$1';
 $route['api'] = 'api/blog1';
 $route['api/(:num)'] = 'api/blog1/$1';
 $route['article/(:num)'] = 'api/index/$1';
@@ -51,5 +52,7 @@ $route['api/blog/(:num)'] = 'api/read/$1';
 $route['api/blog'] = 'api/blog';
 $route['api/blog/(:num)/(:any)'] = 'article/index/$1/$2';
 $route['api/blog/tag/(:any)'] = 'article/get_by_tag/$1';
+$route['article/no/(:num)'] = 'api/blog1/$1';
+$route['article/no'] = 'api/blog1';
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

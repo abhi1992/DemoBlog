@@ -11,17 +11,6 @@
             </div>
         <div class="row">
         <div class=" col-lg-12">
-            <div class="row">
-                <div class="col-lg-4">
-                    <h5 class="my-right">Blog</h5>
-                    <ul class="my-ul">
-                        <li><a class="my-link-2" href="%">some Link</a></li>
-                        <li><a class="my-link-2" href="%">some Link</a></li>
-                        <li><a class="my-link-2" href="%">some Link</a></li>
-                    </ul>
-                    
-                </div>
-        </div>
         </div>
         </div>
         <div class="row">

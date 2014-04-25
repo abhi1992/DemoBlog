@@ -1,6 +1,5 @@
 <section>
     <h2>Article</h2>
-    <a href="comments/edit"><i class="glyphicon glyphicon-plus"></i> Add a comment</a>
     <table class="table table-striped">
         <thead>
             <tr>

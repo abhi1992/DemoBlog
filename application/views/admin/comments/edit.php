@@ -1,4 +1,4 @@
-    <h3><?php echo empty($comments->id)? 'Add a comments':'Edit comments ' ?></h3>
+    <h3><?php echo empty($comments->id)? '':'Edit comments ' ?></h3>
     <?php echo validation_errors(); ?>
     <?php echo form_open(); ?>
     <table class="table">

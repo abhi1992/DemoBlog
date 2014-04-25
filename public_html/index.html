@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Backbone.js Web App</title>
+        <link rel="stylesheet" href="css/screen.css" />
+    </head>
+    <body>
+        <div id="blogs"></div>
+        <div id="comments"></div>
+        
+        <script id="commentTemplate" type="text/template">
+            <h4><%= nick %><span><%= pub_date %></span></h4>
+            <div><%= comment %></div>
+        </script>
+        <script id="blogTemplate" type="text/template">
+            <h1><%= title %><span><%= pub_date %></span></h1>
+            <div><%= blog %></div>
+        </script>
+        <script src="js/jquery-1.7.1.min.js"></script>
+        <script src="js/json2.js"></script>
+        <script src="js/underscore-min.js"></script>
+        <script src="js/backbone-min.js"></script>
+        <script src="b/js/app3.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/models.js"></script>
+        <script>
+//            $(document).ready(
+//
+//                function poll() {
+//                    $.ajax({
+//                    type: "GET",
+//                    url: "http://localhost/client/public_html/api/blog/9",
+//
+//                }).done(function (data) { 
+//                            alert(data);
+//                    var obj = jQuery.parseJSON(data);
+//                    console.log(obj);
+//                });
+//                });
+        </script>
+    </body>
+    
+</html>

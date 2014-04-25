@@ -1,0 +1,153 @@
+/* 
+    Created on : Feb 11, 2014, 7:48:26 PM
+    Author     : Abhishek Banerjee
+*/
+
+* {
+    margin: 0;
+    border-radius: 0px !important;
+}
+
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -4em;
+}
+
+
+.push {
+    height: 4em;
+}
+
+
+.head {
+    background: #1d365d;
+    color: #b9c8e0;
+    
+}
+
+.my-tail {
+    background: #1d365d;
+}
+
+.my-ul {
+    list-style: none;
+}
+
+.my-link{
+    /*background: #333 !important;*/
+    color: #b9c8e0 !important;
+}
+
+.my-link-9 {
+    background: #333;
+    color: #fff;
+    margin-right: 20%;
+}
+.my-link-2{
+    
+    color: #ccc;    
+}
+.my-link-2:hover{
+    
+    color: #fff;    
+}
+
+.my-link-3{
+    
+    color: #ddd;    
+}
+.my-link-3:hover{
+    text-decoration: none;
+    color: #fff;    
+}
+
+.comment-img {
+    border: solid #fff;
+    box-shadow: 0px 1px 5px 0px #ccc;
+}
+.my-link-n{
+    background: #1d365d !important;
+    color: #b9c8e0 !important;
+}
+.my-link-n:hover {
+    /*background-color: #222 !important;*/
+    color: #fff !important;
+}
+
+.my-link:hover {
+    background-color: transparent !important;
+    color: #fff !important;
+}
+
+.my-button {
+    color: #000;
+}
+
+.my-button:hover {
+    color: #ccc;
+}
+.m-active {
+    color: #2E64FE;
+}
+
+.footer {
+    width: 100%;
+    background: #1d365d;
+    color: #aaa;
+    //box-shadow: -1px 0px 15px 0px #000;
+    
+}
+.my-right {
+    padding-left: 39px;
+}
+
+body {
+    /*background: #efefef;*/
+    background: #fefefe;
+}
+
+.mt-1 {
+    margin-top: 1%;
+}
+
+.comment-1{
+    border: dotted 2px #ccc;
+    margin-top: 10px;
+}
+
+.my-div-1 {
+    /*background: #fefefe;*/
+   /*box-shadow: 1px 1px 15px 0px #aaa;*/
+   padding: 4% 4%;
+}
+.my-div-2 {
+    background: #fefee0;
+   //box-shadow: 1px 1px 15px 0px #000;
+   border-left: #555 solid 3px;
+   border-color: #eea236;
+   text-align: center;
+   
+}
+
+.crap_wq {
+    //border: dotted #222;
+    background: #2E64FE;
+    margin-top: 10px;
+    /*border-radius: 4em;*/
+}
+
+.star-t {
+    font-family: 'Josefin Slab', serif;
+    font-size: 21px;
+    text-align: center;
+}
+
+.userInfo{
+    background: transparent !important;
+}

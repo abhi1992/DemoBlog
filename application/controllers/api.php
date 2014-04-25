@@ -12,41 +12,41 @@ class Api extends Frontend_Controller {
         $this->load->model('comments_m');
     }
     
-    public function base($param) {
-        $request = $_SERVER['REQUEST_METHOD'];
-        if ( preg_match( "/^(?=.*[a-zA-Z])(?=.*[0-9])/", $param ) ) {
-           $id = $param;
-       } else {
-           $id = null;
-       }
-        switch( strtoupper( $request ) ) {
-            case 'GET':
-                $method = 'read';
-                break;
-            case 'POST':
-                $method = 'save';
-                break;
-            case 'PUT':
-                $method = 'update';
-                break;
-            case 'DELETE':
-                $method = 'remove';
-                break;
-            case 'OPTIONS':
-                $method = '_options';
-                break;
-        }
-        $this->$method( $id );
-    }
-    
-    public function read($id=NULL) {
-            $this->article_m->set_published();
-            $this->data['article'] = $this->article_m->get($id, TRUE);
-            $this->load->helper('date');
-            $this->data['article']->modified = $this->getTime($this->data['article']->modified);
-            $this->output->set_content_type( 'application/json' );
-            $this->output->set_output( json_encode( $this->data['article'] ) );
-    }
+//    public function base($param) {
+//        $request = $_SERVER['REQUEST_METHOD'];
+//        if ( preg_match( "/^(?=.*[a-zA-Z])(?=.*[0-9])/", $param ) ) {
+//           $id = $param;
+//       } else {
+//           $id = null;
+//       }
+//        switch( strtoupper( $request ) ) {
+//            case 'GET':
+//                $method = 'read';
+//                break;
+//            case 'POST':
+//                $method = 'save';
+//                break;
+//            case 'PUT':
+//                $method = 'update';
+//                break;
+//            case 'DELETE':
+//                $method = 'remove';
+//                break;
+//            case 'OPTIONS':
+//                $method = '_options';
+//                break;
+//        }
+//        $this->$method( $id );
+//    }
+//    
+//    public function read($id=NULL) {
+//            $this->article_m->set_published();
+//            $this->data['article'] = $this->article_m->get($id, TRUE);
+//            $this->load->helper('date');
+//            $this->data['article']->modified = $this->getTime($this->data['article']->modified);
+//            $this->output->set_content_type( 'application/json' );
+//            $this->output->set_output( json_encode( $this->data['article'] ) );
+//    }
     
     public function blog() {
         $this->data['recent_blog'] = $this->article_m->get_recent();

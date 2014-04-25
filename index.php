@@ -18,16 +18,16 @@
  * NOTE: If you change these, also change the error_reporting() code below
  *
  */
-        switch (dirname(__FILE__)) {
-            
-        case 'C:/Users/Abhishek Banerjee/Downloads/Compressed/xampp/htdocs/cms':
-            define('Envionment', 'development');
-            break;
-        default :
-            define('Envionment', 'production');
-            break;
-        
-        };
+define('Envionment', 'development');
+//        switch (dirname(__FILE__)) {
+//            case 'C:/Users/Abhishek Banerjee/Downloads/Compressed/xampp/htdocs/cms':
+//            
+//            break;
+//        default :
+//            define('Envionment', 'production');
+//            break;
+//        
+//        };
 /*
  *---------------------------------------------------------------
  * ERROR REPORTING
@@ -65,7 +65,7 @@ if (defined('ENVIRONMENT'))
  * as this file.
  *
  */
-	$system_path = '../system';
+	$system_path = 'system';
 
 /*
  *---------------------------------------------------------------
@@ -81,7 +81,7 @@ if (defined('ENVIRONMENT'))
  * NO TRAILING SLASH!
  *
  */
-	$application_folder = '../application';
+	$application_folder = 'application';
 
 /*
  * --------------------------------------------------------------------

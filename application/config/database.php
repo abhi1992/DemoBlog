@@ -47,16 +47,19 @@
 
 $active_group = 'default';
 $active_record = TRUE;
-
+//$db['default']['hostname'] = 'mysql9.000webhost.com';
+//$db['default']['username'] = 'a7281133_abhi';
+//$db['default']['password'] = 'qwerty12345';
+//$db['default']['database'] = 'a7281133_cms';
 $db['default']['hostname'] = 'mysql.hostinger.in';
-$db['default']['username'] = 'u241285182_abhi';
-$db['default']['password'] = 'querty';
-$db['default']['database'] = 'u241285182_blog';
+$db['default']['username'] = 'u241285182_teqym';
+$db['default']['password'] = 'qwerty';
+$db['default']['database'] = 'u241285182_papez';
 //$db['default']['hostname'] = 'localhost';
 //$db['default']['username'] = 'root';
 //$db['default']['password'] = '';
 //$db['default']['database'] = 'demoblog';
-$db['default']['dbdriver'] = 'mysql';
+//$db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = FALSE;
 $db['default']['db_debug'] = TRUE;

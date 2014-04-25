@@ -15,18 +15,18 @@ class My_Model extends CI_Model
         parent::__construct();
     }
     
-    public function get_error() {
-        return $this->_error;
-    }
+//    public function get_error() {
+//        return $this->_error;
+//    }
 
-    protected function _set_error( $desc, $data = null ) {
-        $this->_error           = new stdClass();
-        $this->_error->status   = 'error';
-        $this->_error->desc     = $desc;
-        if ( isset( $data ) ) {
-            $this->_error->data = $data;
-        }
-    }
+//    protected function _set_error( $desc, $data = null ) {
+//        $this->_error           = new stdClass();
+//        $this->_error->status   = 'error';
+//        $this->_error->desc     = $desc;
+//        if ( isset( $data ) ) {
+//            $this->_error->data = $data;
+//        }
+//    }
     
     public function array_from_post($fields) {
          $data = array();
